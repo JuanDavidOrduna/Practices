@@ -36,3 +36,35 @@ total_length = (total_length * 2) / 10
 price = total_length * price_per_metre
 # And print out the result
 print("You need", total_length, "meters of cloth for ", price)
+
+
+price_per_metre
+print('\t\t\t\t\t', price)
+
+
+
+
+# print headers for the basic trace table
+print()
+print('\twidth\theight\twidths\ttotal\tprice')
+# I need to add a bit for the hems.
+# First, I must convert the string into a number.
+# Otherwise, I will get an error if I try to perform arithmetic on a text string.
+curtain_width = (float(window_width) * 0.75) + 20
+
+print('\t', curtain_width)
+curtain_length = float(window_height) + 15
+print('\t\t', curtain_length)
+# Now, I need to work out how many widths of cloth will be needed
+# and figure out the total length of material for each curtain (in cm still).
+widths = curtain_width / roll_width
+print('\t\t\t', widths)
+total_length = curtain_length * widths
+print('\t\t\t\t', total_length)
+# Actually, I have two curtains, so I must double the amount of material
+# and then divide by 10 to get the number of meters.
+total_length = (total_length * 2) / 10
+print('\t\t\t\t', total_length)
+# Finally, I need to work out how much it will cost.
+price = total_length * price_per_metre
+print('\t\t\t\t\t', price)
