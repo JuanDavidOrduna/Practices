@@ -7,3 +7,4 @@ while number >= 0:
     counter += 1
 average = total / counter
 print(average)
+print(average)
