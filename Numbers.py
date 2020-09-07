@@ -37,11 +37,11 @@ hexadecimal_number = 0xFC6
 print(octal_number)
 print(hexadecimal_number)
 
->>> permissions = 0o755
->>> gold = 0xFFCC00
+permissions = 0o755
+gold = 0xFFCC00
 
->>> x = 0xaa + 0x33
->>> hex(x)
+x = 0xaa + 0x33
+hex(x)
 
->>> o = 0o77 + 0o33
->>> oct(o)
+o = 0o77 + 0o33
+oct(o)
